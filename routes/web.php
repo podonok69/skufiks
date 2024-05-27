@@ -20,10 +20,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 
-Route::group(['prefix' => 'admin', 'namespece' => 'Admin'], function(){
+Route::group(['prefix' => 'admin', 'namespece' => 'Admin', 'middleware' => 'admin'], function(){
     Route::get('/', [MainController::class, 'index'])->name('admin.index');
     Route::get('/categories/index', [CategoryController::class, 'index'])->name('admin.categories.index');
     Route::get('/categories/create', [CategoryController::class, 'create'])->name('admin.categories.create');
@@ -39,3 +39,5 @@ Route::group(['prefix' => 'admin', 'namespece' => 'Admin'], function(){
     Route::resource('/posts', PostController::class);
 });
 
+
+// Route::get('register', '')

@@ -13,7 +13,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Глав</li>
+                        <li class="breadcrumb-item active">Категории</li>
                     </ol>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                                 </table>
                             </div>
                             @else
-                            <p>Категорий нет......</p>
+                            <p>Категорий нет((</p>
                             @endif
                         </div>
                         <div class="card-footer clearfix">

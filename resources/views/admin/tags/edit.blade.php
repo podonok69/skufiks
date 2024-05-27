@@ -34,7 +34,7 @@
                                 @method('PUT')
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="title">Незвание</label>
+                                        <label for="title">Название</label>
                                         <input type="text" name="title"
                                             class="form-control @error('title') is-invalid @enderror" id="title"
                                             value="{{ $tag->title }}">
